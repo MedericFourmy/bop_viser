@@ -1,0 +1,20 @@
+[project]
+name = "bop-viser"
+version = "0.1.0"
+description = "Display bop estimates/gt using viser"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bop-toolkit-lib",
+    "distinctipy>=1.3.4",
+    "transforms3d>=0.4.2",
+    "viser>=0.2.23",
+]
+
+[tool.uv.sources]
+bop-toolkit-lib = { git = "https://github.com/thodan/bop_toolkit" }
+
+[dependency-groups]
+dev = [
+    "ipdb>=0.13.13",
+]
